@@ -14,4 +14,3 @@ jobs:
           with:
             file_pattern: docs/*.pdf docs/*.html
             commit_message: 'Update resume html and pdf'
-            branch: gh-pages
