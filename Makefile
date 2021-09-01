@@ -26,7 +26,7 @@ html: init
 			--from markdown --to html \
 			--template templates/default.html \
 			--include-before templates/header.html \
-			--output $(OUT_DIR)/$$FILE_NAME.html $$f \
+			--output $(OUT_DIR)/index.html $$f \
 			--metadata pagetitle="Zachary Blackwood: Machine Learning Engineer";\
 	done
 	mkdir -p docs
