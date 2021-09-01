@@ -13,9 +13,9 @@ pdf: init
 			--from markdown --to context \
 			--output $(OUT_DIR)/$$FILE_NAME.tex $$f > /dev/null; \
 		mtxrun --path=$(OUT_DIR) --result=zachary-blackwood-resume.pdf --script context $$FILE_NAME.tex > $(OUT_DIR)/context_$$FILE_NAME.log 2>&1; \
-		mkdir -p docs
-		mv output/resume.pdf docs/zachary-blackwood-resume.pdf
 	done
+	mkdir -p docs
+	mv output/resume.pdf docs/zachary-blackwood-resume.pdf
 
 html: init
 	for f in $(IN_DIR)/*.md; do \
